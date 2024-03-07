@@ -293,6 +293,18 @@
 
     <!-- Maven plugin versions are mentioned in order to guarantee the build reproducibility in the long term -->
     <build>
+  <plugins>
+    <plugin>
+      <groupId>org.sonarsource.scanner.maven</groupId>
+      <artifactId>sonar-maven-plugin</artifactId>
+      <version>3.10.0.2594</version>
+      <configuration>
+        <sonar.host.url>http://your-sonarqube-server:9000</sonar.host.url>
+        <!-- other configurations -->
+      </configuration>
+    </plugin>
+  </plugins>
+</build>
         <defaultGoal>install</defaultGoal>
         <finalName>petclinic</finalName>
         <resources>
